@@ -1,4 +1,4 @@
-# Your startup name here
+# BuildSync
 
 [My Notes](notes.md)
 
