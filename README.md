@@ -21,7 +21,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Have you ever found yourself spending an endless amount of time searching for home information when speaking with realtors, or wish realtors could view a dashboard with all the information for available homes in one place? The BuildSync application allows for the aggregation of scattered data to be populated in a practical and professional dashboard. The result will be a massive reduction in hunting for information and increased time for networking & selling, continuous updates for all parties (realtors and salesmen) on a live dashboard so everyone stays up to date automatically, and ultimately an easier, quicker, and hassle-free experience for clients searching to buy homes. 
 
 ### Design
 
