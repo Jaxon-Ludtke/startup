@@ -21,7 +21,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Have you ever found yourself taking a significant amount of time to go through real estate investing scenarios to calculate cash flow or other metrics, or felt it to be a huge hassle to write or remember the result of these scenarios, resulting in endless re-calculation? The DealFlow application will allow you to input the relevant information for metrics like cash on cash return, total return, and other metrics to analyze the potential in an investment, or refinance scenario. Users will be able to save these scenarios for on demand referance, or optionally share them publicly with others. This application will allow for less hassle and significant time saved when analyzing real estate return scenarios. 
+Have you ever found yourself bogged down by constantly running real estate investing scenarios to calculate cash flow and other metrics, or frustrated to write or remember the results of numerous analyses - resulting in endless re-calculation? The DealFlow application will allow you to input the relevant information for things such as cash on cash return, total return, and other measurements to analyze the potential in an investment, or refinance scenario. Users will be able to save these scenarios for on demand reference, or optionally share them publicly with others. This application will allow for less hassle and significant time saved when analyzing real estate return scenarios. 
 
 ### Design
 
