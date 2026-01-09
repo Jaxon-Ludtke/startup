@@ -1,10 +1,10 @@
-# BuildSync
+# DealFlow
 
 [My Notes](notes.md)
 
-This is an application built for salesmen for a building company. A common issue they have is displaying data to the realtors they work with in an efficient manner. Data about featured homes, prices, HOA information, incentives for different communities, etc. are all in scattered locations (multiple emails, different websites, google sheets, PDF's, etc.). Some of this data is updated and changed daily, which adds to the confusion.
+This is an application is a comprehensive calculator built for real estate investors investing in long-term properties. It will take in several input factors such as monthly/yearly rental income, mortgage term, expenses related to the property (repairs, capital expenses, utilities, HOA, etc.), interest rates, down payment, and other inputs. The application, based on the inputs, will instantly return a list of investment metrics, such as cash on cash return, total return, monthly/yearly cash flow, and other metrics. It will also return the monthly mortgage payment, assuming a standard amortization table. 
 
-The function of the application is to aggregate data from all of these sources into one dashboard, so the salesmen and realtors can see this data in an organized manner. The result will be significant time reduction in providing information and value, more clarity and less hassle, and ease of access for this data for both the salesmen and realtors, which in turn will create more business.
+Each "scenario" can be saved and/or shared pubicly. Users can share their scenarios publicly and can be seen as live updates. A third party API will pull the market mortgage interest rate and display it on the website. 
 
 ## 🚀 Specification Deliverable
 
