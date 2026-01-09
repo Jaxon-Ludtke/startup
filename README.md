@@ -29,29 +29,24 @@ Have you ever found yourself taking a significant amount of time to go through r
 
 Here is a frontend design of the application.
 
-```mermaid
-sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
-```
-
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Ability for admin to modify questions
+- Display live dashboard
+- Scenarios are stored for reference
+- Ability to change inputs for each question
+- Different pages for login, calculation, and storage of saved scenarios
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - HTML will be used for the basic structure of the project. The structure will include three pages: a login page, a calculation and live updates page, and a page that contains stored scenarios. It will be used for the scenario input questions, and the results as well. 
+- **CSS** - CSS will be used to adjust and design good color schemes, whitespaces, clean layout, and simple animations for showing results. 
+- **React** - Will help with the login feature, but most importantly allow for clean transition between old and new data for live updates submitted by other users displayed on the UI. 
+- **Service** - The web service will handle users saving or loading real estate scenarios so data is accurate between sessions. It will also assist with fetching market rate data by acting as a middle layer to not expose API keys. 
+- **DB/Login** - Database will track users across the application, log them in, handle authentication, as well as store real estate scenarios for each respective user.  
+- **WebSocket** - When new deals are shared publicly, websockets will be used to push those scenarios to the live dashboard in real time. This will allow data to be published immediately without needing to refresh the page. 
 
 ## 🚀 AWS deliverable
 
