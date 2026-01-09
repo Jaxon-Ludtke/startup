@@ -4,7 +4,7 @@
 
 This is an application is a comprehensive calculator built for real estate investors investing in long-term properties. It will take in several input factors such as monthly/yearly rental income, mortgage term, expenses related to the property, interest rates, down payment, and potentially other inputs. The application, based on the inputs, will instantly return a list of investment metrics, such as cash on cash return, total return, monthly/yearly cash flow, and other metrics. It will also return the monthly mortgage payment, assuming a standard amortization table. 
 
-Each "scenario" can be saved and/or shared pubicly. Users can share their scenarios publicly and can be seen as live updates. A third party API will pull either the market mortgage interest rate, 10 year treasury yield, or CPI inflation rate and display it on the website. 
+Each "scenario" can be saved and/or shared pubicly. Users can share their scenarios publicly and can be seen as live updates. A third party API will pull either the market mortgage interest rate, 10 year treasury yield, or CPI inflation rate and display it on the application. 
 
 ## 🚀 Specification Deliverable
 
@@ -21,7 +21,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Have you ever found yourself taking a significant amount of time to go through real estate investing scenarios to calculate cash flow or other metrics, or felt it to be a huge hassle to write or remember the result of these scenarios, resulting in endless recalculation? The DealFlow application will allow you to input the relevant information for metrics like cash on cash return, total return, and other metrics to analyze the potential in an investment, or refinance scenario. Users will be able to save these scenarios for on demand referance, or optionally share them publicly with others. This application will allow for less hassle and significant time saved when analyzing real estate return scenarios. 
+Have you ever found yourself taking a significant amount of time to go through real estate investing scenarios to calculate cash flow or other metrics, or felt it to be a huge hassle to write or remember the result of these scenarios, resulting in endless re-calculation? The DealFlow application will allow you to input the relevant information for metrics like cash on cash return, total return, and other metrics to analyze the potential in an investment, or refinance scenario. Users will be able to save these scenarios for on demand referance, or optionally share them publicly with others. This application will allow for less hassle and significant time saved when analyzing real estate return scenarios. 
 
 ### Design
 
