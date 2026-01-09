@@ -25,7 +25,7 @@ Have you ever found yourself taking a significant amount of time to go through r
 
 ### Design
 
-![Design image](startupdiagram.png)
+![Design image](project_diagram.png)
 
 Here is a frontend design of the application.
 
