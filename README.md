@@ -2,9 +2,9 @@
 
 [My Notes](notes.md)
 
-This is an application is a comprehensive calculator built for real estate investors investing in long-term properties. It will take in several input factors such as monthly/yearly rental income, mortgage term, expenses related to the property (repairs, capital expenses, utilities, HOA, etc.), interest rates, down payment, and other inputs. The application, based on the inputs, will instantly return a list of investment metrics, such as cash on cash return, total return, monthly/yearly cash flow, and other metrics. It will also return the monthly mortgage payment, assuming a standard amortization table. 
+This is an application is a comprehensive calculator built for real estate investors investing in long-term properties. It will take in several input factors such as monthly/yearly rental income, mortgage term, expenses related to the property, interest rates, down payment, and potentially other inputs. The application, based on the inputs, will instantly return a list of investment metrics, such as cash on cash return, total return, monthly/yearly cash flow, and other metrics. It will also return the monthly mortgage payment, assuming a standard amortization table. 
 
-Each "scenario" can be saved and/or shared pubicly. Users can share their scenarios publicly and can be seen as live updates. A third party API will pull the market mortgage interest rate and display it on the website. 
+Each "scenario" can be saved and/or shared pubicly. Users can share their scenarios publicly and can be seen as live updates. A third party API will pull either the market mortgage interest rate, 10 year treasury yield, or CPI inflation rate and display it on the website. 
 
 ## 🚀 Specification Deliverable
 
@@ -21,7 +21,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Have you ever found yourself spending an endless amount of time searching for home information when speaking with realtors, or wish realtors could view a dashboard with all the information for available homes in one place? The BuildSync application allows for the aggregation of scattered data to be populated in a practical and professional dashboard. The result will be a massive reduction in hunting for information and increased time for networking & selling, continuous updates for all parties (realtors and salesmen) on a live dashboard so everyone stays up to date automatically, and ultimately an easier, quicker, and hassle-free experience for clients searching to buy homes. 
+Have you ever found yourself taking a significant amount of time to go through real estate investing scenarios to calculate cash flow or other metrics, or felt it to be a huge hassle to write or remember the result of these scenarios, resulting in endless recalculation? The DealFlow application will allow you to input the relevant information for metrics like cash on cash return, total return, and other metrics to analyze the potential in an investment, or refinance scenario. Users will be able to save these scenarios for on demand referance, or optionally share them publicly with others. This application will allow for less hassle and significant time saved when analyzing real estate return scenarios. 
 
 ### Design
 
