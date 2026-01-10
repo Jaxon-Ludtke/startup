@@ -12,3 +12,9 @@ I learned that files, directories, and even code can be manipulated in a termina
 
 I learned that A records route your domain name to an IP, and CNAME records route domains to other domains. I also learned that connections to servers usually go through a process where my computer checks to see if a domain name is cached in my browser or operating system first, and if not, it will go to a DNS server to look up the domain name related to the IP, then finally connect to it. 
 
+##Caddy Reflection - What is it?
+
+Caddy acts like a security guard, as well as a service to help balance and serve incoming requests. If it sees a request that needs static files, it will hand it to the one requesting it. If it needs other programs to handle requests, it will also assist in that process. 
+
+As a sidenote, I also learned you can SSH into your server and alter the files in that server as you please, and even code in that server through your SSH, not even on an IDE downloaded locally. It can all be remotely coded. 
+
