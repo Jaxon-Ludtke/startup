@@ -12,4 +12,3 @@ I learned that files, directories, and even code can be manipulated in a termina
 
 I learned that A records route your domain name to an IP, and CNAME records route domains to other domains. I also learned that connections to servers usually go through a process where my computer checks to see if a domain name is cached in my browser or operating system first, and if not, it will go to a DNS server to look up the domain name related to the IP, then finally connect to it. 
 
-I 
