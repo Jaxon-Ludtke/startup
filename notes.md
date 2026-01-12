@@ -6,7 +6,7 @@ For this first assignment, I learned how to clone a repository, commit a reposit
 ## AWS EC2 Assignment
 Public IP for server: 52.71.196.124.
 
-I learned that files, directories, and even code can be manipulated in a terminal. At its core, the terminal (like git bash, for example) is the stripped down version of a PC's software. Once it's mastered, I can be a much more efficient developer, as well as have newer, beter ways of navigating my way around my PC. I also learned that the internet was largely derived from the Department of Defense's efforts during the Cold War to maintain communications incase of a nuclear war. 
+I learned that files, directories, and even code can be manipulated in a terminal. At its core, the terminal (like git bash, for example) is the stripped down version of a PC's software. Once it's mastered, I can be a much more efficient developer, as well as have newer, better ways of navigating my way around my PC. I also learned that the internet was largely derived from the Department of Defense's efforts during the Cold War to maintain communications incase of a nuclear war. 
 
 ## AWS Route 53 Assignment
 
