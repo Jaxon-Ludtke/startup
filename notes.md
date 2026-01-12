@@ -22,3 +22,5 @@ As a sidenote, I also learned you can SSH into your server and alter the files i
 
 The difference between block-level elements and in-line elements - Block-level elements generally start a new line, create the structure of the page, and have "blocks" - like paragraphs, sections, etc. Common block elements include `<p>`, `<div>`, `<header>`, `<footer>`, etc. In-line elements are modifications to words "in a line", they stay in the same line of text. Examples include bolding a word, images, hyperlinks, etc. Examples include `<span>`, `<a>`, `<img>`, etc. 
 
+I'm also beginning to see the structure of webpages and web applications more clearly. HTML is purely skeletal, with little to no affect on aesthetics or function. CSS/JavaScript/React add the functionality, and the aesthetics. When each language can be compartmentalized like that, it's easier to have a mental model of how websites are made and how to optimize different parts of a web application. 
+
