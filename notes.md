@@ -8,6 +8,8 @@ Public IP for server: 52.71.196.124.
 
 I learned that files, directories, and even code can be manipulated in a terminal. At its core, the terminal (like git bash, for example) is the stripped down version of a PC's software. Once it's mastered, I can be a much more efficient developer, as well as have newer, better ways of navigating my way around my PC. I also learned that the internet was largely derived from the Department of Defense's efforts during the Cold War to maintain communications incase of a nuclear war. 
 
+It's also worth noting that AWS is extremely popular, and once it's mastered, there's a variety of different services I have at my disposal. Even getting proficient at serverwork unlocks a completely new level of harnessing computers and development that I previously wouldn't have had. 
+
 ## AWS Route 53 Assignment
 
 I learned that A records route your domain name to an IP, and CNAME records route domains to other domains. I also learned that connections to servers usually go through a process where my computer checks to see if a domain name is cached in my browser or operating system first, and if not, it will go to a DNS server to look up the domain name related to the IP, then finally connect to it. 
