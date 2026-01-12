@@ -18,3 +18,7 @@ Caddy acts like a security guard, as well as a service to help balance and serve
 
 As a sidenote, I also learned you can SSH into your server and alter the files in that server as you please, and even code in that server through your SSH, not even on an IDE downloaded locally. It can all be remotely coded. 
 
+## CodePen Assignment Notes/Reflection
+
+The difference between block-level elements and in-line elements - Block-level elements generally start a new line, create the structure of the page, and have "blocks" - like paragraphs, sections, etc. Common block elements include <p>, <div>, <header>, <footer>, etc. In-line elements are modifications to words "in a line", they stay in the same line of text. Examples include bolding a word, images, hyperlinks, etc. Examples include <span>, <a>, <img>, etc. 
+
