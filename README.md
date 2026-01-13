@@ -52,7 +52,9 @@ I am going to use the required technologies in the following ways.
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Server deployed and accessible with custom domain name** - [My server link](https://yourdomainnamehere.click).
+- [x] **Server deployed and accessible with custom domain name** - [freedealflow.click](https://freedealflow.click).
+
+For this deliverable, I setup an EC2 account and explored AWS. I created an EC2 instance, which is a server hosted by amazon, and accessed it using the IP given to me. Using Route 53, I leased a domain, familiarized myself with the different record types, and ensured I could access my server with the new domain I leased. I then learned what Caddy does and what it's function is, and edited it so I can have a secure connection to my domain. 
 
 ## 🚀 HTML deliverable
 
