@@ -28,3 +28,6 @@ The difference between block-level elements and in-line elements - Block-level e
 
 I'm also beginning to see the structure of webpages and web applications more clearly. HTML is purely skeletal, with little to no affect on aesthetics or function. CSS/JavaScript/React add the functionality, and the aesthetics. When each language can be compartmentalized like that, it's easier to have a mental model of how websites are made and how to optimize different parts of a web application. 
 
+## Simon HTML Reflection 
+I learned that VSCode has a live server extension where I can see my code update on my website in real time. I also learned that I can use the inspect element debugger on the webpage itself, which is very useful to visually debug my HTML. HTML is pretty intuitive for a programming language, which makes it a little easier than other languages to use.
+
