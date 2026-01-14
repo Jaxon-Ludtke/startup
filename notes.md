@@ -31,3 +31,5 @@ I'm also beginning to see the structure of webpages and web applications more cl
 ## Simon HTML Reflection 
 I learned that VSCode has a live server extension where I can see my code update on my website in real time. I also learned that I can use the inspect element debugger on the webpage itself, which is very useful to visually debug my HTML. HTML is pretty intuitive for a programming language, which makes it a little easier than other languages to use.
 
+## HTML Deliverable Notes
+`<hr/>`, and `<br/>` are ways to organize text. `<hr/>` draws a visible line, and `<br/>` allows you to start text on a new line.
