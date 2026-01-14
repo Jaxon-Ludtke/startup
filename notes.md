@@ -33,3 +33,5 @@ I learned that VSCode has a live server extension where I can see my code update
 
 ## HTML Deliverable Notes
 `<hr/>`, and `<br/>` are ways to organize text. `<hr/>` draws a visible line, and `<br/>` allows you to start text on a new line.
+
+The difference between the `<nav>` and `<div>` as far as menus go, its easier to see in your code what is contained in nav since it's short for navigation, and also good for browsers as well. Usually nav contains navigation tools like hyperlinks for different parts of your application, among other things.
