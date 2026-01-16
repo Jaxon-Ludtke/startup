@@ -60,7 +60,7 @@ For this deliverable, I setup an EC2 account and explored AWS. I created an EC2 
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [x] **HTML pages** - I coded and uploaded 3 HTML pages - the login page, scenarios page, and calculate page. Login allows the user to login, calculate allows user to calculate real estate returns, and scenarios allows user to save real estate scenarios for later reference. 
+- [x] **HTML pages** - I coded and uploaded 3 HTML pages - the login page, scenarios page, and calculate page. Login allows the user to login, calculate allows user to calculate real estate returns, track interest rates in real time, and see published scenarios from other users. The scenarios page allows user to save real estate scenarios for later reference. 
 - [x] **Proper HTML element usage** - I used proper usage for HTML elements. Common ones, aside from header/main/footer include `<label>`, `<div>`, `<br>`, `<input>`, and attributes like for, name, id, and type. 
 - [x] **Links** - Hyperlinks are provided on all pages, referencing each page and my GitHub at the bottom of each page. 
 - [x] **Text** - There are textual descriptions on each page that are essential for the function of the website.
