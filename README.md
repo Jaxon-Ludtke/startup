@@ -60,15 +60,15 @@ For this deliverable, I setup an EC2 account and explored AWS. I created an EC2 
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
-- [ ] **DB data placeholder** - I did not complete this part of the deliverable.
-- [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [x] **HTML pages** - I coded and uploaded 3 HTML pages - the login page, scenarios page, and calculate page. Login allows the user to login, calculate allows user to calculate real estate returns, and scenarios allows user to save real estate scenarios for later reference. 
+- [x] **Proper HTML element usage** - I used proper usage for HTML elements. Common ones, aside from header/main/footer include `<label>`, `<div>`, `<br>`, `<input>`, and attributes like for, name, id, and type. 
+- [x] **Links** - Hyperlinks are provided on all pages, referencing each page and my GitHub at the bottom of each page. 
+- [x] **Text** - There are textual descriptions on each page that are essential for the function of the website.
+- [x] **3rd party API placeholder** - Third party API placeholder is towards the bottom of the calculate page, where a live interest rate tracker will be. 
+- [x] **Images** - Image placed on the scenarios page, used to replace extra whitespace and add some aesthetic. 
+- [x] **Login placeholder** - Login placeholder was properly coded and placed on the login page.
+- [x] **DB data placeholder** - DB data represented on scenarios page, where each user will save their scenarios.
+- [x] **WebSocket placeholder** - WebSocket is represented on calculate page, where there will be a live tracker for submissions from other users, who will have the option to publish their scenarios for everyone on the platform to see.
 
 ## 🚀 CSS deliverable
 
