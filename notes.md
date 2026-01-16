@@ -39,3 +39,7 @@ The difference between the `<nav>` and `<div>` as far as menus go, its easier to
 HTML isn't about the way things look, it's about the way things are described. This is why we don't just stick everything in a `<div>` and call it good. 
 
 `<menu>` is a list item, much like `<ol>` or `<ul>`. 
+
+`<strong>` is used to bolden letters/words/phrases. 
+
+The id and for attribute generally match in input scenarios where text matches an input box. The name attribute is what is stored on the backend when something is submitted, the id is a unique identifier to help labels match with inputs.
