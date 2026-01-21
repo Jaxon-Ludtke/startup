@@ -43,3 +43,13 @@ HTML isn't about the way things look, it's about the way things are described. T
 `<strong>` is used to bolden letters/words/phrases. 
 
 The id and for attribute generally match in input scenarios where text matches an input box. The name attribute is what is stored on the backend when something is submitted, the id is a unique identifier to help labels match with inputs.
+
+## General CSS Notes/Simon CSS Notes
+
+I learned that CSS does not change html structure at all. At first, I thought I would have to make modifications to html files, but instead there are completely separate files specifically for css styling, which makes it much easier to conceptualize.
+
+I learned how much CSS can change how something looks. The difference between simon-html and simon-css is big. Styling is incredibly important for a professional looking design/website. 
+
+Flex direction. I learned that flex-direction: row; and flex-direction: column; controls how elements stack onto each other. This is especially important for mobile layouts. 
+
+Margin and padding - whats the difference? margin controls space outside of elmeents, padding controls space inside of elements. 
