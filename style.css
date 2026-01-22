@@ -27,3 +27,10 @@ main {
   margin: 15px;
   padding: 15px;
 }
+
+footer {
+  flex: 0 30px;
+  background-color: white;
+  padding: 10px 15px;
+  border-top: 1px solid #ccc;
+}
