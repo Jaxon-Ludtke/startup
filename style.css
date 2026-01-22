@@ -7,3 +7,11 @@ body {
   background-color: #e9f0f7;
   color: #222;
 }
+
+
+header {
+  flex: 0 80px;
+  background-color: white;
+  padding: 10px 15px;
+  border-bottom: 2px solid #ccc;
+}
