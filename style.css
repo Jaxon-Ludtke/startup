@@ -111,3 +111,18 @@ img {
   margin-top: 10px;
 }
 
+@media (max-height: 600px) {
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  main {
+    flex: 1 100vh;
+  }
+}
+
+
