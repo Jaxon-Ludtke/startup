@@ -53,3 +53,13 @@ I learned how much CSS can change how something looks. The difference between si
 Flex direction. I learned that flex-direction: row; and flex-direction: column; controls how elements stack onto each other. This is especially important for mobile layouts. 
 
 Margin and padding - whats the difference? margin controls space outside of elmeents, padding controls space inside of elements. 
+
+## CSS Deliverable Notes
+
+Flexbox is a CSS layout system that helps arrange items on a page more easily. It allows you to line up items in rows or columns, control spacing/alignment, etc. It helps make the page look a lot cleaner.
+
+CSS isn't just about colors or text fonts, it's also a lot about spacing and padding. Spacing, padding, and layout is extremely important in a professional looking website, and knowing CSS well can assist in that process. 
+
+CSS is way easier to manage when things are consistent, like using the same colors or spacing across the site.
+
+What's the difference between margin, padding, and gap? margin is space outside an element, padding is inside, and gap is the space between flex items.
