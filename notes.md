@@ -63,3 +63,10 @@ CSS isn't just about colors or text fonts, it's also a lot about spacing and pad
 CSS is way easier to manage when things are consistent, like using the same colors or spacing across the site.
 
 What's the difference between margin, padding, and gap? margin is space outside an element, padding is inside, and gap is the space between flex items.
+
+## React/Vite Practice Notes
+
+What exactly is react? React is a Javascript library for building user intfaces using components.
+It's like a python library you would get from the python repository, it adds functionality to your frontend development by separating things into blocks/ components so there's less hassle and cleaner code.
+
+What is the main flow of React? In the demovite example, it goes index.html > main.jsx > app.jsx. The HTML file "points" to main.jsx, which then loads app.jsx. Why can't we skip main.jsx and just load app.jsx into the HTML file? because the browser doesn't understand pure React, it needs Javascript to integrate react components into the webpage. 
