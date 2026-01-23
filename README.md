@@ -74,12 +74,12 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Header, footer, and main content body** - I did not complete this part of the deliverable.
-- [ ] **Navigation elements** - I did not complete this part of the deliverable.
-- [ ] **Responsive to window resizing** - I did not complete this part of the deliverable.
-- [ ] **Application elements** - I did not complete this part of the deliverable.
-- [ ] **Application text content** - I did not complete this part of the deliverable.
-- [ ] **Application images** - I did not complete this part of the deliverable.
+- [x] **Header, footer, and main content body** - I used CSS to style the header, main section, and footer so they're spaced nicely and visually separate. I also used flexbox and padding to make the layoutu clean and easy to read.
+- [x] **Navigation elements** - I styled the nav menu using CSS to display links in a row with spacing and hover effects rather than vertical bullet points. The navigation layout changes on smaller screens to stay readable.
+- [x] **Responsive to window resizing** - I added media tags so the layout adjusts when the screen size changes. This includes changing menu direction, and adjusting margins/padding.
+- [x] **Application elements** - I styled forms, inputs, and buttons so they're easy to use and consistent across pages. This includes spacing, borders, and hover effects.
+- [x] **Application text content** - I styled headings, paragraphs, and labels to control spacing and readability. This helps the text look way more organized, and consistent throughout the whole app. 
+- [x] **Application images** - I used image sizing and spacing properly so images fit inside the layout properly. That benefit is so that my page doesn't break when my image is displayed.
 
 ## 🚀 React part 1: Routing deliverable
 
