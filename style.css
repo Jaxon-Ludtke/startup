@@ -55,3 +55,11 @@ menu li a:hover {
   text-decoration: underline;
 }
 
+h1, h2, h3, h4 {
+  margin: 10px 0;
+}
+
+p {
+  margin: 8px 0;
+}
+
