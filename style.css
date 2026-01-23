@@ -83,3 +83,17 @@ input {
   border: 1px solid #999;
 }
 
+button {
+  padding: 6px 12px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+
