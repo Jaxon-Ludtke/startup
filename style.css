@@ -63,3 +63,23 @@ p {
   margin: 8px 0;
 }
 
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+form div {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #999;
+}
+
