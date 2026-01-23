@@ -70,3 +70,5 @@ What exactly is react? React is a Javascript library for building user intfaces 
 It's like a python library you would get from the python repository, it adds functionality to your frontend development by separating things into blocks/ components so there's less hassle and cleaner code.
 
 What is the main flow of React? In the demovite example, it goes index.html > main.jsx > app.jsx. The HTML file "points" to main.jsx, which then loads app.jsx. Why can't we skip main.jsx and just load app.jsx into the HTML file? because the browser doesn't understand pure React, it needs Javascript to integrate react components into the webpage. 
+
+What is Vite? Vite is like the live server extension for HTML. It provides a good development environment to test and see changes as they are made. Additionally, when an app is ready to  be pushed to production, Vite converts files for the browser so it can be read and pushed appropriately.
