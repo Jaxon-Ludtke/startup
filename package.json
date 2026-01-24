@@ -13,7 +13,10 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.13.0"
   },
   "devDependencies": {
     "vite": "^7.3.1"
