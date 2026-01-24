@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>DealFlow</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
         <h4>User: <span class="username">jpludtke</span></h4>
         <hr/>
     </header>
-    <main>
+    <main class="container">
         <form>
             <div>
                 <label for="cash flow">💵What is your annual cash flow?</label>
@@ -31,7 +32,7 @@
                 <input type="number" id="cash invested" name="cashinvested" placeholder = "35000">
             </div>
 
-            <button type="submit">Calculate</button>
+            <button type="submit" class="btn btn-primary">Calculate</button>
             <div>
                 <label for="results">Cash on Cash Return:</label>
                 <input type="number" id="results" placeholder="11.4" readonly>
@@ -43,7 +44,7 @@
             <label for="scenario-name">Scenario Name</label><br/>
             <input type="text" id="scenario-name" name="scenarioName" placeholder="Provo Duplex, 20% down">
             <br/><br/>
-            <button type="button">Save Scenario</button>
+            <button type="button" class="btn btn-secondary">Save Scenario</button>
         </div>
         <hr>
         <div>

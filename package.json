@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Jaxon-Ludtke/startup/issues"
   },
-  "homepage": "https://github.com/Jaxon-Ludtke/startup#readme"
+  "homepage": "https://github.com/Jaxon-Ludtke/startup#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
 }
