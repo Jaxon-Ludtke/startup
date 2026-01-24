@@ -8,18 +8,10 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jaxon-Ludtke/startup.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Jaxon-Ludtke/startup/issues"
-  },
-  "homepage": "https://github.com/Jaxon-Ludtke/startup#readme",
   "dependencies": {
     "bootstrap": "^5.3.8"
   },
