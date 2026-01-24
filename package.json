@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Jaxon-Ludtke/startup#readme",
   "dependencies": {
     "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
   }
 }
