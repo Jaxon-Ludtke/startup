@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 export default function Login() {
   return (
     <>
@@ -9,9 +10,9 @@ export default function Login() {
 
         <nav>
           <menu>
-            <li><a href="/">Home</a></li>
-            <li><a href="/scenarios">Scenarios</a></li>
-            <li><a href="/calculate">Calculate</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/scenarios">Scenarios</Link></li>
+            <li><Link to="/calculate">Calculate</Link></li>
           </menu>
         </nav>
 
