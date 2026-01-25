@@ -85,9 +85,9 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Bundled using Vite** - I did not complete this part of the deliverable.
-- [ ] **Components** - I did not complete this part of the deliverable.
-- [ ] **Router** - I did not complete this part of the deliverable.
+- [x] **Bundled using Vite** - Installed Vite, and used it to bundle my React app for production. I ran npm build to get dist/ folder, which contains the optimized, bundled version of my project. Similar to the live server extension, vite dev mode also helped me debug and see changes in real time.
+- [x] **Components** - Converted original HTML pages into react components. Created separate components in their respecctive directories for the login, calculate, and scenarios webpages. I re-used my existing CSS.
+- [x] **Router** - Set up React Router to navigate between my webpages without reloading the site. Set up routes for login, scenarios, and calculate pages, as well as updated my nav links using the `<Link>` component.
 
 ## 🚀 React part 2: Reactivity deliverable
 
