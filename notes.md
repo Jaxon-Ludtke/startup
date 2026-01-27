@@ -74,3 +74,7 @@ What is the main flow of React? In the demovite example, it goes index.html > ma
 What is Vite? Vite is like the live server extension for HTML. It provides a good development environment to test and see changes as they are made. Additionally, when an app is ready to  be pushed to production, Vite converts files for the browser so it can be read and pushed appropriately.
 
 What is React Router? React router is akin to FastAPI from python. FastAPI takes HTTP requests and delivers them in a json format. Router is similar, except instead it delivers frontend UI components. This is so that the app is quicker and feels smoother, since it doesn't have to load several html pages when users switch webpages. 
+
+## React Pt. 2 Simon Notes
+
+I experimented with the reactivity in players.jsx. I modified the state logic, and saw how the UI changed in npm run dev as soon as I made the change. I also added console logs to show when state updates trigger re-rendering. I also changed the order of the events, which changed the UI without refreshing the page, meaning it was stored locally and it infact was driven by React. 
