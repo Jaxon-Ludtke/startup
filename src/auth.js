@@ -9,3 +9,12 @@ export function getUser() {
     return null;
   }
 }
+
+export function setUser(user) {
+  const userString = JSON.stringify(user);
+  localStorage.setItem(USER_KEY, userString);
+}
+
+export function clearUser() {
+  localStorage.removeItem(USER_KEY);
+}
