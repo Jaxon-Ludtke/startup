@@ -1,4 +1,4 @@
-import React, { useState }from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { clearUser, getUser } from "../auth";
 
@@ -88,7 +88,7 @@ export default function Calculate() {
           <div>
             <label htmlFor="results">Cash on Cash Return:</label>
             <input
-              type="number"
+              type="text"
               id="results"
               placeholder="11.4"
               value={results}
