@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState }from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { clearUser, getUser } from "../auth";
 
@@ -55,7 +55,7 @@ export default function Calculate() {
       </header>
 
       <main className="container">
-        <form>
+        <form onSubmit={handleCalculate}>
           <div>
             <label htmlFor="cashflow">💵 What is your annual cash flow?</label>
             <input
@@ -63,6 +63,8 @@ export default function Calculate() {
               id="cashflow"
               name="cashflow"
               placeholder="4000"
+              value={cashflow}
+              onChange={(e) => setCashflow(e.target.value)}
             />
           </div>
 
@@ -73,6 +75,9 @@ export default function Calculate() {
               id="cashinvested"
               name="cashinvested"
               placeholder="35000"
+              value={cashinvested}
+              onChange={(e) => setCashinvested(e.target.value)}
+
             />
           </div>
 
@@ -86,6 +91,7 @@ export default function Calculate() {
               type="number"
               id="results"
               placeholder="11.4"
+              value={results}
               readOnly
             />
           </div>
