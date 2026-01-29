@@ -14,6 +14,7 @@ export default function Calculate() {
   const [cashflow, setCashflow] = useState("");
   const [cashinvested, setCashinvested] = useState("");
   const [results, setResults] = useState("");
+  const [scenarioName, setScenarioName] = useState("");
 
   function handleCalculate(e) {
     e.preventDefault();
@@ -22,13 +23,36 @@ export default function Calculate() {
     const investedNum = Number(cashinvested) || 0;
 
     if (investedNum <= 0) {
-      setResults(""); // or "0.0"
+      setResults(""); 
       return;
     }
 
     const coc = (flowNum / investedNum) * 100;
     setResults(coc.toFixed(1));
   }
+
+  function handleSaveScenario() {
+    const name = scenarioName.trim();
+
+    if (!name) return;
+    if (!results) return;
+
+    const newScenario = {
+      id: Date.now(),
+      name,
+      cashflow: Number(cashflow) || 0,
+      cashinvested: Number(cashinvested) || 0,
+      coc: Number(results) || 0,
+    };
+
+    const existing = JSON.parse(localStorage.getItem("dealflow_scenarios") || "[]");
+    existing.unshift(newScenario);
+    localStorage.setItem("dealflow_scenarios", JSON.stringify(existing));
+
+    setScenarioName("");
+    navigate("/scenarios");
+  }
+  
 
   return (
     <>
@@ -109,10 +133,15 @@ export default function Calculate() {
             id="scenario-name"
             name="scenarioName"
             placeholder="Provo Duplex, 20% down"
+            value={scenarioName}
+            onChange={(e) => setScenarioName(e.target.value)}
           />
           <br /><br />
 
-          <button type="button" className="btn btn-secondary">
+          <button 
+          type="button" 
+          className="btn btn-secondary"
+          onClick={handleSaveScenario}>
             Save Scenario
           </button>
         </div>
