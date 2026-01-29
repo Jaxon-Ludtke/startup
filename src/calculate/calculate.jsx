@@ -14,7 +14,22 @@ export default function Calculate() {
   const [cashflow, setCashflow] = useState("");
   const [cashinvested, setCashinvested] = useState("");
   const [results, setResults] = useState("");
-  
+
+  function handleCalculate(e) {
+    e.preventDefault();
+
+    const flowNum = Number(cashflow) || 0;
+    const investedNum = Number(cashinvested) || 0;
+
+    if (investedNum <= 0) {
+      setResults(""); // or "0.0"
+      return;
+    }
+
+    const coc = (flowNum / investedNum) * 100;
+    setResults(coc.toFixed(1));
+  }
+
   return (
     <>
       <header>
