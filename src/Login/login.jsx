@@ -23,7 +23,7 @@ export default function Login() {
   }
 
   const user = getUser();
-  
+
   return (
     <>
       <header>
@@ -41,7 +41,7 @@ export default function Login() {
         </nav>
 
         <h4>
-          User: <span className="username">jpludtke</span>
+          User: <span className="username">{user ? user.email : "Not logged in"}</span>
         </h4>
       </header>
 
