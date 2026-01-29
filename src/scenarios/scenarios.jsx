@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { clearUser, getUser } from "../auth";
 
@@ -11,6 +11,18 @@ export default function Scenarios() {
   clearUser();
   navigate("/");
 }
+  const [scenarios, setScenarios] = useState([]);
+
+  useEffect(() => {
+  const existing = JSON.parse(localStorage.getItem("dealflow_scenarios") || "[]");
+  setScenarios(existing);
+  }, []);
+
+  function deleteScenario(id) {
+  const updated = scenarios.filter((s) => s.id !== id);
+  setScenarios(updated);
+  localStorage.setItem("dealflow_scenarios", JSON.stringify(updated));
+  }
 
   return (
     <>
