@@ -1,7 +1,29 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import React, {useEffect, useState} from 'react';
 import { getUser, setUser } from "../auth";
+
 export default function Login() {
+   const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+  
+    if (!email.trim()) return;
+
+    setUser({
+      email: email.trim(),
+      name: email.trim().split("@")[0], 
+    });
+
+    navigate("/calculate"); 
+  }
+
+  const user = getUser();
+  
   return (
     <>
       <header>
