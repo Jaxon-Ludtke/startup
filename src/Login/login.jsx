@@ -24,6 +24,13 @@ export default function Login() {
 
   const user = getUser();
 
+  function logout() {
+  clearUser();
+  navigate("/");
+}
+
+  
+
   return (
     <>
       <header>
@@ -41,8 +48,14 @@ export default function Login() {
         </nav>
 
         <h4>
-          User: <span className="username">{user ? user.email : "Not logged in"}</span>
+        User: <span className="username">{user ? user.email : "Not logged in"}</span>
+        {user && (
+        <button onClick={logout} style={{ marginLeft: "10px" }}>
+          Logout
+        </button>
+          )}
         </h4>
+
       </header>
 
       <main>
