@@ -1,6 +1,6 @@
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import React, {useEffect, useState} from 'react';
-import { getUser, setUser } from "../auth";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { getUser, setUser, clearUser } from "../auth";
 
 export default function Login() {
    const navigate = useNavigate();
