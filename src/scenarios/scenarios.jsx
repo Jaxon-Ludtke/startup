@@ -26,7 +26,12 @@ export default function Scenarios() {
         </nav>
 
         <h4>
-          User: <span className="username">jpludtke</span>
+        User: <span className="username">{user ? user.email : "Not logged in"}</span>
+        {user && (
+        <button onClick={logout} style={{ marginLeft: "10px" }}>
+        Logout
+        </button>
+        )}
         </h4>
       </header>
 
