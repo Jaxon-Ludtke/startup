@@ -4,9 +4,9 @@ import { clearUser, getUser } from "../auth";
 
 export default function Calculate() {
   const navigate = useNavigate();
-const user = getUser();
+  const user = getUser();
 
-function logout() {
+  function logout() {
   clearUser();
   navigate("/");
 }
@@ -24,7 +24,12 @@ function logout() {
         </nav>
 
         <h4>
-          User: <span className="username">jpludtke</span>
+        User: <span className="username">{user ? user.email : "Not logged in"}</span>
+        {user && (
+        <button onClick={logout} style={{ marginLeft: "10px" }}>
+        Logout
+        </button>
+        )}
         </h4>
         <hr />
       </header>

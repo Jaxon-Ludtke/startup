@@ -5,9 +5,9 @@ import { clearUser, getUser } from "../auth";
 export default function Scenarios() {
 
   const navigate = useNavigate();
-const user = getUser();
+  const user = getUser();
 
-function logout() {
+  function logout() {
   clearUser();
   navigate("/");
 }
