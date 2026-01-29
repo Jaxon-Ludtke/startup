@@ -3,6 +3,15 @@ import { Link, useNavigate } from 'react-router-dom'
 import { clearUser, getUser } from "../auth";
 
 export default function Scenarios() {
+
+  const navigate = useNavigate();
+const user = getUser();
+
+function logout() {
+  clearUser();
+  navigate("/");
+}
+
   return (
     <>
       <header>
