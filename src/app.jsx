@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './login/login.jsx'
 import Scenarios from './scenarios/scenarios.jsx'
 import Calculate from './calculate/calculate.jsx'
-import RequireAuth from './RequireAuth.js'
+import RequireAuth from './RequireAuth.jsx'
 
 export default function App() {
   return (
