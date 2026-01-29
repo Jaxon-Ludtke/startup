@@ -48,19 +48,27 @@ export default function Login() {
       <main>
         <h1>Login to DealFlow</h1>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <div>
             <span>📧</span>
-            <input type="text" placeholder="your@email.com" />
+            <input type="text" 
+            placeholder="your@email.com" 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
-
           <div>
             <span>🗝️</span>
-            <input type="password" placeholder="password" />
+            <input
+              type="password"
+              placeholder="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
 
           <button type="submit">Login</button>
-          <button type="button">Create</button>
+          <button type="button" onClick={() => alert("Mock create later!")}>Create</button>
         </form>
       </main>
 
