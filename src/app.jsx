@@ -4,15 +4,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './login/login.jsx'
 import Scenarios from './scenarios/scenarios.jsx'
 import Calculate from './calculate/calculate.jsx'
-import RequireLogin from './requirelogin.jsx'
+import RequireAuth from './RequireAuth.js'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/scenarios" element={<RequireLogin><Scenarios /></RequireLogin>} />
-        <Route path="/calculate" element={<RequireLogin><Calculate /></RequireLogin>} />
+        <Route path="/scenarios" element={<RequireAuth><Scenarios /></RequireAuth>} />
+        <Route path="/calculate" element={<RequireAuth><Calculate /></RequireAuth>} />
       </Routes>
     </BrowserRouter>
   )
