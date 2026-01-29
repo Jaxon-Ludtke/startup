@@ -51,25 +51,28 @@ export default function Scenarios() {
         <hr />
         <h2>Saved Scenarios</h2>
 
-        <ul>
-          <li>
-            <strong>Provo Duplex - 20% down</strong>
-            <br />
-            Cash on Cash Return: 7.2%
-          </li>
-
-          <li>
-            <strong>Orem SFH - Low cash flow</strong>
-            <br />
-            Cash on Cash Return: 3.4%
-          </li>
-
-          <li>
-            <strong>Lehi Townhome - Higher rent</strong>
-            <br />
-            Cash on Cash Return: 9.1%
-          </li>
-        </ul>
+        {scenarios.length === 0 ? (
+          <p>No scenarios saved yet. Go to Calculate and save one.</p>
+        ) : (
+          <ul>
+            {scenarios.map((s) => (
+              <li key={s.id} style={{ marginBottom: "14px" }}>
+                <strong>{s.name}</strong>
+                <br />
+                Cash on Cash Return: {Number(s.coc).toFixed(1)}%
+                <br />
+                <button
+                  type="button"
+                  className="btn btn-sm btn-outline-danger"
+                  onClick={() => deleteScenario(s.id)}
+                  style={{ marginTop: "6px" }}
+                >
+                  Delete
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
 
         <img
           src="https://media.istockphoto.com/id/2175972607/photo/modern-luxury-home-with-geometric-driveway-and-sunset-sky.jpg?s=612x612&w=0&k=20&c=0pvJ_frDStQGywjOptq9XmyEQgVIxfH3Yg7MbYIfIjI="
