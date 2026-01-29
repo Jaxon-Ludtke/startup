@@ -10,6 +10,11 @@ export default function Calculate() {
   clearUser();
   navigate("/");
 }
+
+  const [cashflow, setCashflow] = useState("");
+  const [cashinvested, setCashinvested] = useState("");
+  const [results, setResults] = useState("");
+  
   return (
     <>
       <header>
