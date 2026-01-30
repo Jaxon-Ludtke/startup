@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { clearUser, getUser } from "../auth";
 
@@ -175,15 +175,9 @@ export default function Calculate() {
         <div>
           <h4>Live Feed</h4>
           <ul>
-            <li className="player name">
-              John Doe submitted a deal... 5.5% CoC return!
-            </li>
-            <li className="player name">
-              Jack Smith submitted a deal... 3.3% CoC return!
-            </li>
-            <li className="player name">
-              Johnny Test submitted a deal... 3.1% CoC return!
-            </li>
+            {feed.map((item) => (
+              <li key={item.id} className="player name">{item.text}</li>
+            ))}
           </ul>
         </div>
 
