@@ -16,6 +16,14 @@ export default function Calculate() {
   const [results, setResults] = useState("");
   const [scenarioName, setScenarioName] = useState("");
 
+  const [feed, setFeed] = useState([
+    { id: 1, text: "John Doe submitted a deal... 5.5% CoC return!" },
+    { id: 2, text: "Jack Smith submitted a deal... 3.3% CoC return!" },
+    { id: 3, text: "Johnny Test submitted a deal... 3.1% CoC return!" },
+  ]);
+
+  const [interestRate, setInterestRate] = useState(5.5);
+
   function handleCalculate(e) {
     e.preventDefault();
 
