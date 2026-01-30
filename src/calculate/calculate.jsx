@@ -22,7 +22,23 @@ export default function Calculate() {
     { id: 3, text: "Johnny Test submitted a deal... 3.1% CoC return!" },
   ]);
 
-  const [interestRate, setInterestRate] = useState(5.5);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const userNum = Math.floor(Math.random() * 100);
+      const mockCoc = (Math.random() * 10).toFixed(1); 
+
+      setFeed((prev) => {
+        const next = [
+          { id: Date.now(), text: `User-${userNum} submitted a deal... ${mockCoc}% CoC return!` },
+          ...prev,
+        ];
+        return next.slice(0, 5); 
+      });
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+      
 
   function handleCalculate(e) {
     e.preventDefault();
