@@ -78,3 +78,17 @@ What is React Router? React router is akin to FastAPI from python. FastAPI takes
 ## React Pt. 2 Simon Notes
 
 I experimented with the reactivity in players.jsx. I modified the state logic, and saw how the UI changed in npm run dev as soon as I made the change. I also added console logs to show when state updates trigger re-rendering. I also changed the order of the events, which changed the UI without refreshing the page, meaning it was stored locally and it infact was driven by React. 
+
+## React Pt. 2 Reflection
+
+I learned that useState is how react remembers values and updates the screen. Instead of manually changing anything, I can store values like cash invested, results, scenario name, etc. in state, and React will automatically re render the component when the values change. State should drive rendering, rather than hardcoded HTML. I replaced static lists with .map() so React can render data dynamically based on the state. 
+
+I also learned the useEffect runs cod when a component loads. I used this specifically to load saved scenarios from localStorage, as well as for my live submission feed. 
+
+It's important to 'reactify' future backends, as that is an important part of frontend design. Specifically, I learned to use both localStorage and setInterval to simulate live updates for my live submission feed, which gave it the functionality to update every few seconds with fake deal submissions.
+
+Cleaning up effects prevents bugs. For example, return () => clearInterval(intervalId) acts as a way to prevent React from continuously running intervals even after navigating away.
+
+LocalStorage is an easy way to store and retrieve objects. For example, JSON.stringify() and JSON.parse were used to help my app keep scenarios saved even after refreshing the page - which is the purpose of localstorage, making it feel like a real application. 
+
+This project ultimately helped me understand that React is about updating state and letting React handle the UI. Once this clicked, everything made a lot more sense. 
