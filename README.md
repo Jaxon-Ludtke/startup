@@ -93,8 +93,8 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **All functionality implemented or mocked out** - I did not complete this part of the deliverable.
-- [ ] **Hooks** - I did not complete this part of the deliverable.
+- [x] **All functionality implemented or mocked out** - All core app features are now functional. Cash on cash return calculates appropriately using React state. Scenarios can be saved and deleted using localstorage. Future backend support for live submission feed is mocked out as well using SetInterval to simulate real time updates.
+- [x] **Hooks** - Used hooks like useState to store and update input values and calculation inputs, used useNavigate to route users appropriately after login/logout, and restrict access to other pages unless logged in. Also used useEffect to run logic when components load, like checking localStorage for existing users that are logged in and redirecting them appropriately. Also used useEffect for live submission feed as well. 
 
 ## 🚀 Service deliverable
 
