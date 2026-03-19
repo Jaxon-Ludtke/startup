@@ -1,4 +1,3 @@
-
 while getopts k:h:s: flag
 do
     case "${flag}" in
