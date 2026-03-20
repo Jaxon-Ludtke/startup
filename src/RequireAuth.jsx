@@ -9,7 +9,7 @@ export default function RequireAuth({ children }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    fetch("/api/auth/check")
+    fetch("/api/auth/check", { credentials: 'include' })
       .then((response) => {
         if (response.ok) {
           setIsLoggedIn(true);
