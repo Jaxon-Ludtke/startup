@@ -63,6 +63,10 @@ apiRouter.delete('/auth/logout', async (req, res) => {
   res.status(204).end();
 });
 
+apiRouter.get('/auth/check', requireLogin, (req, res) => {
+  res.send({ email: req.user.email });
+});
+
 apiRouter.get('/scenarios', requireLogin, (req, res) => {
   const myScenarios = scenarios.filter(s => s.email === req.user.email);
   res.send(myScenarios);
