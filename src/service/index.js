@@ -92,3 +92,37 @@ apiRouter.delete('/scenario/:id', requireLogin, (req, res) => {
   scenarios.splice(index, 1);
   res.status(204).end();
 });
+
+app.use((_req, res) => {
+  res.sendFile('index.html', { root: 'public' });
+});
+
+async function createUser(email, password) {
+  const hashedPassword = await bcrypt.hash(password, 10);
+
+  const user = {
+    email: email,
+    password: hashedPassword, 
+    token: uuid.v4(), 
+  };
+
+  users.push(user);
+  return user;
+}
+
+async function findUser(field, value) {
+  if (!value) return null;
+  return users.find(u => u[field] === value);
+}
+
+function setAuthCookie(res, token) {
+  res.cookie(authCookieName, token, {
+    secure: true,
+    httpOnly: true,
+    sameSite: 'strict',
+  });
+}
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
