@@ -24,10 +24,17 @@ export default function Scenarios() {
     navigate("/");
     }
 
-  function deleteScenario(id) {
-  const updated = scenarios.filter((s) => s.id !== id);
-  setScenarios(updated);
-  localStorage.setItem("dealflow_scenarios", JSON.stringify(updated));
+  async function handleDeleteScenario(id) {
+    const response = await fetch(`/api/scenario/${id}`, {
+      method: "DELETE",
+    });
+
+    if (response.ok) {
+      const updated = scenarios.filter((s) => s.id !== id);
+      setScenarios(updated);
+    } else {
+      alert("Failed to delete scenario");
+    }
   }
 
   return (
@@ -44,12 +51,10 @@ export default function Scenarios() {
         </nav>
 
         <h4>
-        User: <span className="username">{user ? user.email : "Not logged in"}</span>
-        {user && (
-        <button onClick={logout} style={{ marginLeft: "10px" }}>
-        Logout
-        </button>
-        )}
+         User: <span className="username">{loggedInEmail ? loggedInEmail : "Not logged in"}</span>
+          {loggedInEmail && (
+            <button onClick={handleLogout} style={{ marginLeft: "10px" }}>Logout</button>
+          )}
         </h4>
       </header>
 
@@ -70,7 +75,7 @@ export default function Scenarios() {
                 <button
                   type="button"
                   className="btn btn-sm btn-outline-danger"
-                  onClick={() => deleteScenario(s.id)}
+                  onClick={() => handleDeleteScenario(s.id)}
                   style={{ marginTop: "6px" }}
                 >
                   Delete
