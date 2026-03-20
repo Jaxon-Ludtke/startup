@@ -1,9 +1,9 @@
 import React, {useEffect, useState } from 'react'
-import { Link, UseNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { getLoggedInUser, removeLoggedInUser } from "../auth";
 
 export default function Scenarios() {
-  const navigate = UseNavigate();
+  const navigate = useNavigate();
   const loggedInEmail = getLoggedInUser();
   const [scenarios, setScenarios] = useState([]);
 
