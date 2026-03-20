@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { getLoggedInUser, removeLoggedinUser } from "../auth";
+import { getLoggedInUser, removeLoggedInUser } from "../auth";
 
 export default function Calculate() {
   const navigate = useNavigate();
@@ -70,26 +70,31 @@ export default function Calculate() {
     navigate("/");
   }
 
-  function handleSaveScenario() {
+    async function handleSaveScenario() {
     const name = scenarioName.trim();
 
     if (!name) return;
     if (!results) return;
 
     const newScenario = {
-      id: Date.now(),
-      name,
+      name: name,
       cashflow: Number(cashflow) || 0,
       cashinvested: Number(cashinvested) || 0,
       coc: Number(results) || 0,
     };
+    const response = await fetch("/api/scenario", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newScenario),
+    });
 
-    const existing = JSON.parse(localStorage.getItem("dealflow_scenarios") || "[]");
-    existing.unshift(newScenario);
-    localStorage.setItem("dealflow_scenarios", JSON.stringify(existing));
-
-    setScenarioName("");
-    navigate("/scenarios");
+    if (response.ok) {
+      setScenarioName("");
+      setErrorMessage("");
+      navigate("/scenarios");
+    } else {
+      setErrorMessage("Failed to save scenario. Are you logged in?");
+    }
   }
   
 
