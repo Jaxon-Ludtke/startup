@@ -64,6 +64,12 @@ export default function Calculate() {
     setResults(coc.toFixed(1));
   }
 
+    async function handleLogout() {
+    await fetch("/api/auth/logout", { method: "DELETE" });
+    removeLoggedInUser();
+    navigate("/");
+  }
+
   function handleSaveScenario() {
     const name = scenarioName.trim();
 
