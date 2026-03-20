@@ -63,6 +63,19 @@ apiRouter.delete('/auth/logout', async (req, res) => {
   res.status(204).end();
 });
 
+async function requireLogin(req, res, next) {
+  const user = await findUser('token', req.cookies[authCookieName]);
+
+  if (!user) {
+    res.status(401).send({ msg: 'You need to be logged in to do that' });
+    return;
+  }
+
+  req.user = user;
+  next();
+}
+
+
 apiRouter.get('/auth/check', requireLogin, (req, res) => {
   res.send({ email: req.user.email });
 });
