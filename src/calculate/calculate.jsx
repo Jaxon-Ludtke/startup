@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { clearUser, getUser } from "../auth";
+import { getLoggedInUser, removeLoggedinUser } from "../auth";
 
 export default function Calculate() {
   const navigate = useNavigate();
-  const user = getUser();
-
-  function logout() {
-  clearUser();
-  navigate("/");
-}
+  const loggedInEmail = getLoggedInUser();
 
   const [cashflow, setCashflow] = useState("");
   const [cashinvested, setCashinvested] = useState("");
   const [results, setResults] = useState("");
   const [scenarioName, setScenarioName] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [interestRate, setInterestRate] = useState("Loading...");
 
   const [feed, setFeed] = useState([
     { id: 1, text: "John Doe submitted a deal... 5.5% CoC return!" },
