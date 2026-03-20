@@ -20,16 +20,28 @@ export default function Calculate() {
   ]);
 
   useEffect(() => {
+    fetch("https://api.stlouisfed.org/fred/series/observations?series_id=DGS10&api_key=f8d5bd2947e8b9f0e4e3d1234567890&sort_order=desc&limit=1&file_type=json")
+      .then((response) => response.json())
+      .then((data) => {
+        const rate = data.observations[0].value;
+        setInterestRate(rate + "%");
+      })
+      .catch(() => {
+        setInterestRate("Unavailable");
+      });
+  }, []);
+
+  useEffect(() => {
     const intervalId = setInterval(() => {
       const userNum = Math.floor(Math.random() * 100);
-      const mockCoc = (Math.random() * 10).toFixed(1); 
+      const mockCoc = (Math.random() * 10).toFixed(1);
 
       setFeed((prev) => {
         const next = [
           { id: Date.now(), text: `User-${userNum} submitted a deal... ${mockCoc}% CoC return!` },
           ...prev,
         ];
-        return next.slice(0, 5); 
+        return next.slice(0, 5);
       });
     }, 3000);
 
