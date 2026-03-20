@@ -112,12 +112,10 @@ export default function Calculate() {
         </nav>
 
         <h4>
-        User: <span className="username">{user ? user.email : "Not logged in"}</span>
-        {user && (
-        <button onClick={logout} style={{ marginLeft: "10px" }}>
-        Logout
-        </button>
-        )}
+          User: <span className="username">{loggedInEmail ? loggedInEmail : "Not logged in"}</span>
+          {loggedInEmail && (
+            <button onClick={handleLogout} style={{ marginLeft: "10px" }}>Logout</button>
+          )}
         </h4>
         <hr />
       </header>
@@ -169,7 +167,7 @@ export default function Calculate() {
 
         <div>
           <h3>Save This Scenario</h3>
-
+          {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
           <label htmlFor="scenario-name">Scenario Name</label>
           <br />
           <input
@@ -203,7 +201,7 @@ export default function Calculate() {
 
         <div>
           <h4>Live Interest Rate Tracker</h4>
-          <p>Bond and/or mortgage interest rates today: 5.5%</p>
+          <p>10-Year Treasury Rate: {interestRate}</p>
         </div>
       </main>
 
