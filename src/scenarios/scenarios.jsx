@@ -1,21 +1,21 @@
 import React, {useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { clearUser, getUser } from "../auth";
+import { getLoggedInUser, removeLoggedInUser } from "../auth";
 
 export default function Scenarios() {
-
-  const navigate = useNavigate();
-  const user = getUser();
-
-  function logout() {
-  clearUser();
-  navigate("/");
-}
+  const navigate = UseNavigate();
+  const loggedInEmail = getLoggedInUser();
   const [scenarios, setScenarios] = useState([]);
 
-  useEffect(() => {
-  const existing = JSON.parse(localStorage.getItem("dealflow_scenarios") || "[]");
-  setScenarios(existing);
+    useEffect(() => {
+    fetch("/api/scenarios")
+      .then((response) => response.json())
+      .then((data) => {
+        setScenarios(data);
+      })
+      .catch(() => {
+        console.log("Failed to load scenarios");
+      });
   }, []);
 
   function deleteScenario(id) {
