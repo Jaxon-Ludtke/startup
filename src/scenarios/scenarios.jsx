@@ -18,6 +18,12 @@ export default function Scenarios() {
       });
   }, []);
 
+    async function handleLogout() {
+    await fetch("/api/auth/logout", { method: "DELETE" });
+    removeLoggedInUser();
+    navigate("/");
+    }
+
   function deleteScenario(id) {
   const updated = scenarios.filter((s) => s.id !== id);
   setScenarios(updated);
