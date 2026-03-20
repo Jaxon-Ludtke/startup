@@ -63,3 +63,32 @@ apiRouter.delete('/auth/logout', async (req, res) => {
   res.status(204).end();
 });
 
+apiRouter.get('/scenarios', requireLogin, (req, res) => {
+  const myScenarios = scenarios.filter(s => s.email === req.user.email);
+  res.send(myScenarios);
+});
+
+apiRouter.post('/scenario', requireLogin, (req, res) => {
+  const newScenario = {
+    id: uuid.v4(), 
+    email: req.user.email, 
+    name: req.body.name,
+    cashflow: req.body.cashflow,
+    cashinvested: req.body.cashinvested,
+    coc: req.body.coc,
+  };
+
+  scenarios.unshift(newScenario); 
+  res.send(newScenario);
+});
+
+apiRouter.delete('/scenario/:id', requireLogin, (req, res) => {
+  const index = scenarios.findIndex(s => s.id === req.params.id && s.email === req.user.email);
+  if (index === -1) {
+    res.status(404).send({ msg: 'Scenario not found' });
+    return;
+  }
+
+  scenarios.splice(index, 1);
+  res.status(204).end();
+});
