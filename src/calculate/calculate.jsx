@@ -20,16 +20,15 @@ export default function Calculate() {
   ]);
 
   useEffect(() => {
-    fetch("https://api.stlouisfed.org/fred/series/observations?series_id=DGS10&api_key=f8d5bd2947e8b9f0e4e3d1234567890&sort_order=desc&limit=1&file_type=json")
+    fetch("https://api.frankfurter.app/latest?from=USD&to=EUR")
       .then((response) => response.json())
       .then((data) => {
-        const rate = data.observations[0].value;
-        setInterestRate(rate + "%");
+        setInterestRate(data.rates.EUR.toFixed(4));
       })
       .catch(() => {
         setInterestRate("Unavailable");
-      });
-  }, []);
+    });
+}, []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -200,8 +199,8 @@ export default function Calculate() {
         </div>
 
         <div>
-          <h4>Live Interest Rate Tracker</h4>
-          <p>10-Year Treasury Rate: {interestRate}</p>
+          <h4>Live USD to EUR Exchange Rate Tracker</h4>
+          <p>USD to EUR Exchange Rate: {interestRate}</p>
         </div>
       </main>
 
