@@ -100,12 +100,14 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Node.js/Express HTTP service** - I did not complete this part of the deliverable.
-- [ ] **Static middleware for frontend** - I did not complete this part of the deliverable.
-- [ ] **Calls to third party endpoints** - I did not complete this part of the deliverable.
-- [ ] **Backend service endpoints** - I did not complete this part of the deliverable.
-- [ ] **Frontend calls service endpoints** - I did not complete this part of the deliverable.
-- [ ] **Supports registration, login, logout, and restricted endpoint** - I did not complete this part of the deliverable.
+- [x] **Node.js/Express HTTP service** - The backend service was created and connected to the service directory, which includes its own package and index.js file. I used Node.js and Express running on port 4000 for the backend server. I also installed bcryptjs and uuid packages.  
+- [x] **Static middleware for frontend** - I added express.static('public') middleware, so that the Express backend serves the bundled react front end files. That way the backend handles both API requests and serving the frontend from a single server. 
+- [x] **Calls to third party endpoints** - On the calculate page, I wrote a UseEffect Hook to get the live USD to EUR exchange rate from Frankfurter API, which doesn't require a key. 
+- [x] **Backend service endpoints** - Created endpoints under the /api path for saving a new scenario (POST api/scenario,) also made it possible to grab all saved scenarios for the logged in user (GET/api/scenarios), and deleting scenario by the scenario ID (DELETE api/scenario/:id). All of the scenario endpoints require user to be logged in. 
+- [x] **Frontend calls service endpoints** - I updated calculate.jsx to save scenarios by making a POST fetch request to /api/scenario instead of saving to the localStorage. I also included GET /api/scenarios to load scenarios on the webpage, and also included a way to delete them. Authentication functions in login.jsx call POST /api/auth/login, POST /api/auth/create, and DELETE /api/auth/logout. 
+- [x] **Supports registration, login, logout, and restricted endpoint** -  In contrast to the prior deliverable, I implemented full cookie based authentication rather than localstorage. Passwords are hashed with bcrypt before being stored. 
+
+To handle user login, the server generates a UUID token, stores it on the user, and sends it back as a secure HTTP-only cookie, for greater security. A requireLogin middleware function then checks the cookie and returns a 401 if the token is invalid/missing. Users can register with a new email, log in with an existing account, and log out. Logging out clears the cookie on both the server and browser.
 
 
 ## 🚀 DB deliverable
