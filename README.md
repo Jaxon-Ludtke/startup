@@ -114,8 +114,8 @@ To handle user login, the server generates a UUID token, stores it on the user, 
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Stores data in MongoDB** - I did not complete this part of the deliverable.
-- [ ] **Stores credentials in MongoDB** - I did not complete this part of the deliverable.
+- [x] **Stores data in MongoDB** - I modified the database.js file so it connects to MongoDB Atlas and stores users, their login info, and their scenarios. I also updated all scenario endpoints in index.js so that it will read, write, and delete data from MongoDB rather than in-memory storage. 
+- [x] **Stores credentials in MongoDB** - Users, their accounts and their email, hashed password, and authentication token are stored in a user collection in MongoDB. Login, account creation, and logout functions all interact with MongoDB to persist and/or retrieve credentials. 
 
 ## 🚀 WebSocket deliverable
 
