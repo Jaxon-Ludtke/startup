@@ -7,9 +7,6 @@ const app = express();
 const port = 4000;
 const authCookieName = 'token';
 
-let users = [];
-let scenarios = [];
-
 app.use(express.json());
 
 app.use(cookieParser());
