@@ -84,7 +84,7 @@ apiRouter.get('/scenarios', requireLogin, async (req, res) => {
   res.send(myScenarios);
 });
 
-apiRouter.post('/scenario', requireLogin, (req, res) => {
+apiRouter.post('/scenario', requireLogin, async (req, res) => {
   const newScenario = {
     id: uuid.v4(), 
     email: req.user.email, 
@@ -94,7 +94,7 @@ apiRouter.post('/scenario', requireLogin, (req, res) => {
     coc: req.body.coc,
   };
 
-  scenarios.unshift(newScenario); 
+  await DB.addScenario(newScenario); 
   res.send(newScenario);
 });
 
