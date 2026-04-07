@@ -79,8 +79,8 @@ apiRouter.get('/auth/check', requireLogin, (req, res) => {
   res.send({ email: req.user.email });
 });
 
-apiRouter.get('/scenarios', requireLogin, (req, res) => {
-  const myScenarios = scenarios.filter(s => s.email === req.user.email);
+apiRouter.get('/scenarios', requireLogin, async (req, res) => {
+  const myScenarios = await DB.getScenarios(req.user.email);
   res.send(myScenarios);
 });
 
