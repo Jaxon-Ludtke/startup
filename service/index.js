@@ -98,14 +98,12 @@ apiRouter.post('/scenario', requireLogin, async (req, res) => {
   res.send(newScenario);
 });
 
-apiRouter.delete('/scenario/:id', requireLogin, (req, res) => {
-  const index = scenarios.findIndex(s => s.id === req.params.id && s.email === req.user.email);
-  if (index === -1) {
+apiRouter.delete('/scenario/:id', requireLogin, async (req, res) => {
+  const result = await DB.deleteScenario(req.params.id, req.user.email);
+  if (result.deletedCount == 0) {
     res.status(404).send({ msg: 'Scenario not found' });
     return;
   }
-
-  scenarios.splice(index, 1);
   res.status(204).end();
 });
 
