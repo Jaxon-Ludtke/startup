@@ -10,7 +10,7 @@ const client = new MongoClient(url);
 const userCollection = db.collection('user');
 const scenarioCollection = db.collection('scenario');
 
-async function main() {
+async function testConnection() {
   try {
     await db.command({ ping: 1 });
     console.log(`DB connected to ${config.hostname}`);
@@ -19,27 +19,11 @@ async function main() {
     process.exit(1);
   }
 
-  try {
-    const house = {
-      name: 'Beachfront views',
-      summary: 'From your bedroom to the beach, no shoes required',
-      property_type: 'Condo',
-      beds: 1,
-    };
-    await collection.insertOne(house);
-
-    const query = { property_type: 'Condo', beds: { $lt: 2 } };
-    const options = { sort: { name: -1 }, limit: 10 };
-    const cursor = collection.find(query, options);
-    const rentals = await cursor.toArray();
-    rentals.forEach((i) => console.log(i));
-
-    await collection.deleteMany(query);
-  } catch (ex) {
-    console.log(`Database (${url}) error: ${ex.message}`);
-  } finally {
-    await client.close();
-  }
+  function getUser(email) {
+  return userCollection.findOne({ email });
 }
 
-main();
+function getUserByToken(token) {
+  return userCollection.findOne({ token });
+}
+};
