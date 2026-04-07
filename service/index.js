@@ -121,7 +121,7 @@ async function createUser(email, password) {
     token: uuid.v4(), 
   };
 
-  users.push(user);
+  await DB.createUser(user);
   return user;
 }
 
